@@ -16,7 +16,7 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                dir('/Example_3') {
+                dir('Example_3') {
                     sh '''
                         pip3 install poetry
                         poetry config virtualenvs.in-project true
